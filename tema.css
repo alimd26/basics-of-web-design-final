@@ -1,0 +1,73 @@
+body  {
+    margin: 0;
+    padding: 0;
+}
+  
+.navbar {    
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    list-style-type: none;
+    width: 20vh;
+    
+    height: 100%;
+    overflow: auto;
+    background-color: darkcyan;
+}
+
+li a  {
+    display:inline-block;
+    text-decoration: none;
+    color:blue;
+    cursor: default;
+    width: 100%;
+    padding: 14px 5px;
+
+}
+
+ a.anasayfa{
+    background-color: azure;
+    color: green;
+}
+
+a:hover, .menu:hover .menu-tus:hover, .menu-icerik a:hover {
+    background-color: darkcyan;
+    color: aquamarine;
+    border: 1px solid black;
+}
+
+.menu, li a {
+    display: inline-block;
+    width: 100%;
+    background-color: aquamarine;
+    
+}
+
+.menu-tus{
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.menu-icerik {
+    display: none;
+    min-width: 100%;
+    position: absolute;
+    
+}
+
+.menu-icerik a{
+    display: block;
+    color: black;
+    background-color:cyan;
+    
+}
+
+.menu:hover .menu-icerik {
+    display: block;
+}
+
+p{
+    text-indent: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
