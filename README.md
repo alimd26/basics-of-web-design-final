@@ -1,2 +1,2 @@
-# basics-of-web-design-final-
+# basics-of-web-design-final
 Final Projesi
