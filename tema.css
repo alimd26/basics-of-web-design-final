@@ -16,7 +16,7 @@ body  {
     background-color: darkcyan;
 }
 
-li a  {
+li a, span {
     display:inline-block;
     text-decoration: none;
     color:blue;
@@ -25,16 +25,19 @@ li a  {
     padding: 14px 5px;
 
 }
-
  a.anasayfa{
     background-color: azure;
     color: green;
 }
 
-a:hover, .menu:hover .menu-tus:hover, .menu-icerik a:hover {
+a:hover, .menu-icerik a:hover, span:hover{
     background-color: darkcyan;
     color: aquamarine;
     border: 2px solid black;
+}
+#div1 a:hover, #div2 a:hover{
+    color: darkblue;
+    background-color: darkcyan;
 }
 
 .menu, li a {
@@ -44,28 +47,21 @@ a:hover, .menu:hover .menu-tus:hover, .menu-icerik a:hover {
     
 }
 
-.menu-tus{
-    display: inline-block;
-    width: 100%;
-    
-}
-
 .menu-icerik {
     display: none;
-    min-width: 100%;
-    position: absolute;
-    
 }
 
-.menu-icerik a{
-    display: block;
-    color: black;
-    background-color:cyan;
+#div1  a{
+    display: flex;
+    color: aquamarine;
+    background-color: darkturquoise;
     
 }
-
-.menu:hover .menu-icerik {
-    display: block;
+#div2  a{
+    display: flex;
+    color: aquamarine;
+    background-color:darkturquoise;;
+    
 }
 
 h2{
