@@ -9,11 +9,106 @@
     <link rel="stylesheet" href="tema.css">
     <style>
         body {
-            background-image: url();
             background-repeat: no-repeat;
             background-size: 100vw;
             background-position-x: 20vh;
         }
+        
+        form,
+        input,
+        p {
+            outline: none;
+            font-size: 14px;
+            color: #666;
+            line-height: 22px;
+        }
+
+        h1 {
+            font-weight: 400;
+        }
+
+        h4 {
+            margin: 22px 0 4px;
+            color: #095484;
+        }
+
+        .testbox {
+            justify-content: center;
+            align-items: center;
+            height: inherit;
+            padding: 3px;
+        }
+
+        form {
+            width: 100%;
+            padding-left: 20vh;
+            background: #fff;
+            box-shadow: 0 2px 5px whitesmoke;
+        }
+
+        input {
+            width: calc(100% - 10px);
+            padding: 5px;
+            border: 1px solid whitesmoke;
+            border-radius: 3px;
+        }
+
+        input:hover,
+        textarea:hover {
+            outline: none;
+            border: 3px solid darkblue;
+        }
+
+        .first-name {
+            margin-bottom: 22px;
+        }
+
+        th,
+        td {
+            width: 21%;
+            padding: 15px 0;
+            border-bottom: 1px solid blue;
+            text-align: center;
+            vertical-align: unset;
+            line-height: 18px;
+            font-weight: 400;
+            word-break: break-all;
+        }
+
+        .first-col {
+            width: 16%;
+            text-align: left;
+        }
+
+        table {
+            width: 85vw;
+            color: darkcyan;
+            background-color: whitesmoke;
+        }
+
+        textarea {
+            width: calc(100% - 6px);
+        }
+
+        .btn-block {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            background-color: #095484;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0666a3;
+        }
+    </style>
     </style>
 </head>
 
@@ -56,14 +151,70 @@
         <li><a href="https://github.com/alimd26" target="_blank">GITHUB</a></li>
         <li><a href="25_hakkimda.html">HAKKIMDA</a></li>
     </ul>
-    <div class="metin">
+    <div class="testbox">
+        <form action="">
+            <h1 style="text-align: center;">GERİ BİLDİRİM FORMU</h1>
+            <p>Geri bildirim formumuzu doldurmak için zaman ayırdığınız için teşekkür ederiz. Bize geri bildiriminizi
+                sağlayarak, neyi iyi yaptığımızı ve hangi iyileştirmeleri uygulamamız gerektiğini anlamamıza yardımcı
+                oluyorsunuz.</p>
+            <h4>İsim Soyisim:</h4>
+            <input class="first-name" type="text" name="name" placeholder="İsminiz nedir?" />
+            <input type="text" name="name" placeholder="Soyisminiz nedir?" />
+            <h4>Email</h4>
+            <input type="email" />
+            <h4>Site hakkında derecelendirmeniz:</h4>
+            <table>
+                <tr>
+                    <th class="first-col"></th>
+                    <th>Çok Güzel</th>
+                    <th>Güzel</th>
+                    <th>Ortalama</th>
+                    <th>Kötü</th>
+                </tr>
+                <tr>
+                    <td class="first-col">Tasarım</td>
+                    <td><input type="radio" value="none" name="point#1"></td>
+                    <td><input type="radio" value="none" name="point#1”></td>
+                    <td><input type="radio" value="none" name="point#1"></td>
+                    <td><input type="radio" value="none" name="point#1"></td>
+                    <td><input type="radio" value="none" name="point#1"></td>
 
-    </div>
-    <div id="footer">
-        Copyright &copy; 2022 - Web Tasarımı Temelleri
-        <a href="mailto:alim.degirmenci@ogr.dpu.edu.tr">Bana Ulaş</a>
-    </div>
-    <script src="navbar.js"></script>
+                </tr>
+                <tr>
+                    <td class="first-col">İçerik</td>
+                    <td><input type="radio" value="none" name="point#2" /></td>
+                    <td><input type="radio" value="none" name="point#2" /></td>
+                    <td><input type="radio" value="none" name="point#2" /></td>
+                    <td><input type="radio" value="none" name="point#2" /></td>
+                </tr>
+                <tr>
+                    <td class="first-col">İşlevsellik</td>
+                    <td><input type="radio" value="none" name="point#3" /></td>
+                    <td><input type="radio" value="none" name="point#3" /></td>
+                    <td><input type="radio" value="none" name="point#3" /></td>
+                    <td><input type="radio" value="none" name="point#3" /></td>
+                </tr>
+                <tr>
+                    <td class="first-col">Cihaz Uyumu</td>
+                    <td><input type="radio" value="none" name="point#4" /></td>
+                    <td><input type="radio" value="none" name="point#4" /></td>
+                    <td><input type="radio" value="none" name="point#4" /></td>
+                    <td><input type="radio" value="none" name="point#4" /></td>
+                </tr>
+            </table>
+            <h4>Site hakkındaki görüş&önerilerinizi bizimle paylaşın:</h4>
+            <textarea rows="5"></textarea>
+            <small>* Geri Bildirim Formunda verilen bilgiler yalnızca hizmet iyileştirme için kullanılacaktır ve
+                kesinlikle gizlidir..</small>
+            <div class="btn-block">
+                <button type="submit" href="/">GÖNDER :)</button>
+            </div>
+            <br><br>
+            <div id="footer">
+                Copyright &copy; 2022 - Web Tasarımı Temelleri
+                <a href="mailto:alim.degirmenci@ogr.dpu.edu.tr">Bana Ulaş</a>
+            </div>
+            <script src="navbar.js"></script>
 </body>
 
 </html>

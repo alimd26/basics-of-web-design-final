@@ -14,6 +14,68 @@
             background-size: 100vw;
             background-position-x: 20vh;
         }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            float: left;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .kucuk {
+            float: left;
+            width: 25%;
+            margin-top: 10px;
+        }
+
+        .buyuk {
+            float: left;
+            width: 75%;
+            margin-top: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .kucuk,
+            .buyuk,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
     </style>
 </head>
 
@@ -57,13 +119,63 @@
         <li><a href="25_hakkimda.html">HAKKIMDA</a></li>
     </ul>
     <div class="metin">
+        <h1>ANKET</h1>
+        <p>Geri bildirim formumuzu doldurmak için zaman ayırdığınız için teşekkür ederiz. Bize geri bildiriminizi
+            sağlayarak, neyi iyi yaptığımızı ve hangi iyileştirmeleri uygulamamız gerektiğini anlamamıza yardımcı
+            oluyorsunuz.</p>
 
-    </div>
-    <div id="footer">
-        Copyright &copy; 2022 - Web Tasarımı Temelleri
-        <a href="mailto:alim.degirmenci@ogr.dpu.edu.tr">Bana Ulaş</a>
-    </div>
-    <script src="navbar.js"></script>
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="kucuk">
+                        <label for="fname">İsim</label>
+                    </div>
+                    <div class="buyuk">
+                        <input type="text" id="fname" name="firstname" placeholder="İsim">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="kucuk">
+                        <label for="lname">Soyisim</label>
+                    </div>
+                    <div class="buyuk">
+                        <input type="text" id="lname" name="lastname" placeholder="Soyisim">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="kucuk">
+                        <label for="country">Site Tasarımı Nasıl Olmuş?</label>
+                    </div>
+                    <div class="buyuk">
+                        <select id="country" name="country">
+                            <option value="5">Harika!</option>
+                            <option value="4">İyi.</option>
+                            <option value="3">Eh işte...</option>
+                            <option value="2">Kötü.</option>
+                            <option value="1">Çok kötü...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="kucuk>
+              <label for="subject">Site Hakkındaki Görüş:</label>
+                    </div>
+                    <div class="buyuk">
+                        <textarea id="subject" name="subject" placeholder="SİTE HAKKINDAKİ YORUMLARINIZI BURAYA YAZABİLİRSİNİZ..."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div id="footer">
+            Copyright &copy; 2022 - Web Tasarımı Temelleri
+            <a href="mailto:alim.degirmenci@ogr.dpu.edu.tr">Bana Ulaş</a>
+        </div>
+        <script src="navbar.js"></script>
 </body>
 
 </html>
